@@ -1,15 +1,15 @@
 /*
 https://github.com/sebnil/Moving-Avarage-Filter--Arduino-Library-
 */
-#ifndef MovingAvarageFilter_h
-#define MovingAvarageFilter_h
+#ifndef MovingAverageFilter_h
+#define MovingAverageFilter_h
 
 #define MAX_DATA_POINTS 20
 
-class MovingAvarageFilter {
+class MovingAverageFilter {
 public:
   //construct without coefs
-  MovingAvarageFilter(unsigned int newDataPointsCount);
+  MovingAverageFilter(unsigned int newDataPointsCount);
 
   float process(float in);
 

@@ -1,9 +1,9 @@
 /*
 https://github.com/sebnil/Moving-Avarage-Filter--Arduino-Library-
 */
-#include "MovingAvarageFilter.h"
+#include "MovingAverageFilter.h"
 
-MovingAvarageFilter::MovingAvarageFilter(unsigned int newDataPointsCount) {
+MovingAverageFilter::MovingAverageFilter(unsigned int newDataPointsCount) {
   k = 0; //initialize so that we start to write at index 0
   if (newDataPointsCount < MAX_DATA_POINTS)
 	dataPointsCount = newDataPointsCount;
@@ -15,7 +15,7 @@ MovingAvarageFilter::MovingAvarageFilter(unsigned int newDataPointsCount) {
   }
 }
 
-float MovingAvarageFilter::process(float in) {
+float MovingAverageFilter::process(float in) {
   out = 0;
 
   values[k] = in;
