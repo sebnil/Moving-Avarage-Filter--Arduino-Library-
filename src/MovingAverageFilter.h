@@ -6,7 +6,8 @@ https://github.com/sebnil/Moving-Avarage-Filter--Arduino-Library-
 
 #define MAX_DATA_POINTS 20
 
-class MovingAverageFilter {
+class MovingAverageFilter
+{
 public:
   //construct without coefs
   MovingAverageFilter(unsigned int newDataPointsCount);
@@ -21,4 +22,3 @@ private:
   int i; // just a loop counter
 };
 #endif
-
